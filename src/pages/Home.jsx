@@ -5,14 +5,14 @@ import '../App.css'
 
 const Home = () => {
     return (
-        <div className='bg-primary vh-100'>
-            <Container fluid>
+        <div className='home bg-primary vh-100'>
+            <Container fluid className='p-1'>
                 <div className='p-5 text-center text-white'>
                     <h1 className='fw-bold'>Bienvenido a <Fade duration={200} cascade>U_Store</Fade></h1>
                     <p>En U_Store encontrarás todo lo que necesitas para tu hogar</p>
                     <Link to={'/products'}><Button variant='outline-light'>Ver Productos</Button></Link>
                 </div>
-                <Carousel className='carousel-home w-50 mx-auto'>
+                <Carousel className='carousel-home mx-auto'>
                     <Carousel.Item className='h-100'>
                         <img
                         className="d-block w-100"

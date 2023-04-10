@@ -1,4 +1,19 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .carousel-home {
   border-radius: 25px;
   overflow: hidden;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .carousel-home {
+    width: 100%;
+    border-radius: 0;
+  }
 }
